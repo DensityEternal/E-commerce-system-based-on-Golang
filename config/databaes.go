@@ -18,6 +18,10 @@ func ConnectDB() {
 	if err := db.AutoMigrate(&models.Product{}); err != nil {
 		panic("auto shift fail: " + err.Error())
 	}
+	ERROR := db.AutoMigrate(&models.User{})
+	if ERROR != nil {
+		panic("Create table fail: " + ERROR.Error())
+	}
 	DB = db
 	fmt.Println("Connected database successfully")
 }
