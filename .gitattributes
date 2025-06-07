@@ -1,0 +1,7 @@
+# Force LF for all text files
+* text=auto
+*.go text eol=lf
+*.sh text eol=lf
+
+# Windows-specific files (e.g., batch scripts) should have CRLF
+*.bat text eol=crlf
