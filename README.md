@@ -39,13 +39,6 @@ Record learning of building an e-commerce system
 
 
 
-#### config/
-- `config.go`：加载和管理项目配置（如 Redis 连接参数、端口等）
-- `.env`、`config.yaml`：环境变量或配置信息
-
----
-
-
 ### 测试
 
 使用 curl/Postman 等工具访问已开放的 API，或根据代码进行功能测试。
